@@ -231,5 +231,8 @@ div.subfigure {text-align:center;display:inline-block; max-width:45%;}
 #tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #00B2B2;}
 #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #E5FFFF; border: 1px solid #00B2B2;}
 #tcolobox-1 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
+#tcolobox-2 .tcolorbox-title{color: #FFFFFF; background-color: #000000;}
+#tcolobox-2 .tcolorbox-content{color: #000000; background-color: #E5E5E5; border: 1px solid #000000;}
+#tcolobox-2 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
 /* end css.sty */
 

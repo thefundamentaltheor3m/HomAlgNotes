@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.21)  21 JAN 2025 00:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.21)  21 JAN 2025 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -58,9 +58,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language58). Reported on input line 105.
+(babel)             (\language43). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language58). Reported on input line 108.
+(babel)             (\language43). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -1661,7 +1661,8 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 Package cleveref Info: `listings' support loaded on input line 3131.
 )
 \c@theorem=\count524
-\c@problem=\count525
+\c@PS=\count525
+\c@problem=\count526
 ) (./TeX_Setup/shortcuts.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.markings.code.tex
@@ -1679,7 +1680,7 @@ version 2024-01-10-14:44
 version 2024-01-23-13:44
 l.870 --- TeX4ht warning --- nonprimitive \everypar ---
 --- needs --- tex4ht main ---
-\tmp:cnt=\count526
+\tmp:cnt=\count527
 \openout15 = `main.tmp'.
 
 (./main.tmp)
@@ -1951,7 +1952,7 @@ version 2022-10-25-13:59
 version 2023-10-09-13:31
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tcolorbox.4ht
 version 2024-01-15-13:12
-\c@:tcbcolcount=\count527
+\c@:tcbcolcount=\count528
 (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2024-01-30-13:46
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
@@ -2217,8 +2218,8 @@ version 2022-10-25-13:59
 version 2023-10-09-13:31
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/biblatex.4ht
 version 2023-12-11-13:31
-\sv:sec:cnt=\count528
-\c@bib=\count529
+\sv:sec:cnt=\count529
+\c@bib=\count530
 \blx@unitmark=\skip191
 (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2024-01-30-13:46
@@ -2440,7 +2441,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-\c@lstlisting=\count530
+\c@lstlisting=\count531
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -2556,9 +2557,9 @@ LaTeX Font Warning: Font shape `T1/xcmss/b/n' in size <14.4> not available
 [4
 
 ]) (./Chapters/1_Cat_Thy/1_2_Nat_Transfs.tex) (./Chapters/1_Cat_Thy/1_3_Constru
-ctions.tex)) (./Chapters/Ex/Ex.tex [5] [6] (./Chapters/Ex/PS1.tex)) [7
+ctions.tex)) (./Chapters/Ex/Ex.tex [5] [6] (./Chapters/Ex/PS1.tex [7
 
-]
+])) [8]
 
 LaTeX Warning: Empty bibliography on input line 48.
 
@@ -2587,7 +2588,7 @@ LaTeX Font Info:    Trying to load font information for OMX+yhex on input line
 (/usr/share/texlive/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-) [8] 
+) [9] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -2607,12 +2608,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61357 strings out of 474223
- 1363619 string characters out of 5748759
- 2429170 words of memory out of 5000000
- 82126 multiletter control sequences out of 15000+600000
+ 61378 strings out of 474223
+ 1363894 string characters out of 5748759
+ 2429184 words of memory out of 5000000
+ 82147 multiletter control sequences out of 15000+600000
  576326 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  112i,6n,134p,1243b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (11 pages, 51700 bytes).
+Output written on main.dvi (12 pages, 52948 bytes).

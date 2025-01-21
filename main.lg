@@ -257,6 +257,9 @@ Css: div.subfigure {text-align:center;display:inline-block; max-width:45%;}
 Css: #tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #00B2B2;}
 Css: #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #E5FFFF; border: 1px solid #00B2B2;}
 Css: #tcolobox-1 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
+Css: #tcolobox-2 .tcolorbox-title{color: #FFFFFF; background-color: #000000;}
+Css: #tcolobox-2 .tcolorbox-content{color: #000000; background-color: #E5E5E5; border: 1px solid #000000;}
+Css: #tcolobox-2 div{ padding-top:8.5358px; padding-bottom:8.5358px; padding-left:14.22635px; padding-right:14.22635px; }
 --- characters ---
 Font("ecss","1200","12","100")
 Font("ecss","2074","20","100")
