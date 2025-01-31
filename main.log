@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.21)  21 JAN 2025 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.31)  31 JAN 2025 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -58,9 +58,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language79). Reported on input line 105.
+(babel)             (\language25). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language79). Reported on input line 108.
+(babel)             (\language25). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -2556,39 +2556,98 @@ LaTeX Font Warning: Font shape `T1/xcmss/b/n' in size <14.4> not available
 
 [4
 
-]) (./Chapters/1_Cat_Thy/1_2_Nat_Transfs.tex) (./Chapters/1_Cat_Thy/1_3_Constru
-ctions.tex)) (./Chapters/Ex/Ex.tex [5] [6] (./Chapters/Ex/PS1.tex [7
-
-])) [8]
-
-LaTeX Warning: Empty bibliography on input line 48.
-
+]
 LaTeX Font Info:    Trying to load font information for OT1+cmsmf on input line
- 52.
+ 14.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathfonts/ot1cmsmf.fd
 File: ot1cmsmf.fd 2021/06/22
 )
-LaTeX Font Info:    Trying to load font information for U+ssmsa on input line 5
-2.
+LaTeX Font Info:    Trying to load font information for U+ssmsa on input line 1
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathfonts/ussmsa.fd
 File: ussmsa.fd 2019/04/04
 )
-LaTeX Font Info:    Trying to load font information for U+ssmsb on input line 5
-2.
+LaTeX Font Info:    Trying to load font information for U+ssmsb on input line 1
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathfonts/ussmsb.fd
 File: ussmsb.fd 2019/04/04
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 52
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
 .
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-52.
+14.
 (/usr/share/texlive/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-) [9] 
+)
+l. 14 Writing main.idv[1] (main0x.svg)
+l. 15 Writing main.idv[2] (main1x.svg)
+l. 15 Writing main.idv[3] (main2x.svg)
+l. 16 Writing main.idv[4] (main3x.svg)
+l. 16 Writing main.idv[5] (main4x.svg)
+l. 17 Writing main.idv[6] (main5x.svg)
+l. 20 Writing main.idv[7] (main6x.svg)
+l. 20 Writing main.idv[8] (main7x.svg)
+l. 20 Writing main.idv[9] (main8x.svg)
+l. 20 Writing main.idv[10] (main9x.svg)
+l. 23 Writing main.idv[11] (main10x.svg)
+l. 23 Writing main.idv[12] (main11x.svg)
+l. 23 Writing main.idv[13] (main12x.svg)
+l. 23 Writing main.idv[14] (main13x.svg)
+l. 24 Writing main.idv[15] (main14x.svg)
+l. 24 Writing main.idv[16] (main15x.svg)
+[5] [6]
+l. 38 Writing main.idv[17] (main16x.svg)
+l. 40 Writing main.idv[18] (main17x.svg)
+l. 40 Writing main.idv[19] (main18x.svg)
+l. 40 Writing main.idv[20] (main19x.svg)
+l. 40 Writing main.idv[21] (main20x.svg)
+l. 41 Writing main.idv[22] (main21x.svg)
+l. 41 Writing main.idv[23] (main22x.svg)
+l. 41 Writing main.idv[24] (main23x.svg)
+l. 41 Writing main.idv[25] (main24x.svg)
+l. 41 Writing main.idv[26] (main25x.svg)
+l. 41 Writing main.idv[27] (main26x.svg)
+l. 48 Writing main.idv[28] (main27x.svg)
+l. 48 Writing main.idv[29] (main28x.svg)
+l. 48 Writing main.idv[30] (main29x.svg)
+l. 50 Writing main.idv[31] (main30x.svg)
+[7] [8]
+l. 65 Writing main.idv[32] (main31x.svg)
+l. 65 Writing main.idv[33] (main32x.svg)
+l. 70 Writing main.idv[34] (main33x.svg)
+l. 70 Writing main.idv[35] (main34x.svg)
+[9] [10]
+l. 93 Writing main.idv[36] (main35x.svg)
+l. 93 Writing main.idv[37] (main36x.svg)
+l. 94 Writing main.idv[38] (main37x.svg)
+l. 95 Writing main.idv[39] (main38x.svg)
+[11] [12]
+l. 111 Writing main.idv[40] (main39x.svg)
+l. 111 Writing main.idv[41] (main40x.svg)
+l. 112 Writing main.idv[42] (main41x.svg)
+l. 112 Writing main.idv[43] (main42x.svg)
+l. 112 Writing main.idv[44] (main43x.svg)
+l. 114 Writing main.idv[45] (main44x.svg)
+l. 115 Writing main.idv[46] (main45x.svg)
+l. 115 Writing main.idv[47] (main46x.svg)
+l. 115 Writing main.idv[48] (main47x.svg)
+[13]
+l. 135 Writing main.idv[49] (main48x.svg)
+l. 135 Writing main.idv[50] (main49x.svg)
+l. 135 Writing main.idv[51] (main50x.svg)
+l. 135 Writing main.idv[52] (main51x.svg)
+) (./Chapters/1_Cat_Thy/1_2_Nat_Transfs.tex [14] [15]) (./Chapters/1_Cat_Thy/1_
+3_Constructions.tex)) (./Chapters/Ex/Ex.tex [16] (./Chapters/Ex/PS1.tex [17
+
+])) [18]
+
+LaTeX Warning: Empty bibliography on input line 48.
+
+[19] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -2608,12 +2667,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61378 strings out of 474223
- 1363894 string characters out of 5748759
- 2429185 words of memory out of 5000000
- 82147 multiletter control sequences out of 15000+600000
- 576326 words of font info for 82 fonts, out of 8000000 for 9000
+ 61495 strings out of 474223
+ 1365261 string characters out of 5748759
+ 2433438 words of memory out of 5000000
+ 82260 multiletter control sequences out of 15000+600000
+ 578739 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 112i,6n,134p,1243b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 112i,18n,134p,1243b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (12 pages, 52984 bytes).
+Output written on main.dvi (22 pages, 94096 bytes).

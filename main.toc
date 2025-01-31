@@ -1,10 +1,13 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}A Crash Course on Category Theory}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Important Fundamentals}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Categories and Functors}{3}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Properties of Morphisms}{3}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Natural Transformations}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Categorical Constructions}{3}{section.1.3}%
-\contentsline {chapter}{Exercises}{4}{chapter*.2}%
-\contentsline {section}{Problem Sheet 1}{4}{section*.3}%
-\contentsline {chapter}{Bibliography}{5}{problem.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Objects and Morphisms}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Properties of Morphisms}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Functors}{6}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Natural Transformations}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Equivalences of Categories}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Adjoint Pairs}{7}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Categorical Constructions}{8}{section.1.3}%
+\contentsline {chapter}{Exercises}{9}{chapter*.2}%
+\contentsline {section}{Problem Sheet 1}{9}{section*.3}%
+\contentsline {chapter}{Bibliography}{10}{problem.1.1}%

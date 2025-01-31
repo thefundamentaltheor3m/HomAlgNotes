@@ -6,10 +6,131 @@ In this module, we will not be too precise about what constitutes a \textit{clas
 
 With this disclaimer in mind, we are ready to begin.
 
-\subsection{Categories and Functors}
+\subsection{Objects and Morphisms}
 
 \begin{boxdefinition}[Category]
-    A \textbf{category}
+    A \textbf{category} consists of the following data.
+    \begin{enumerate}
+        \item A \textbf{class} of \textbf{objects}, denoted $\abs{\CC}$.
+        \item For each pair of objects $A, B \in \abs{\CC}$, a \textbf{class} of \textbf{morphisms} from $A$ to $B$, denoted $\HomC{A, B}$. This class can be empty.
+        \item For each object $A \in \abs{\CC}$, a \textbf{distinguished morphism} $\id_A \in \HomC{A, A}$, known as the \textbf{identity morphism on $A$}.
+        \item For each ordered triple of objects $A, B, C \in \abs{\CC}$, a \textbf{composition map}
+        \begin{align*}
+            \circ : \HomC{A, B} \times \HomC{B, C} &\to \HomC{A, C} : (f, g) \mapsto g \circ f
+        \end{align*}
+        such that
+        \begin{enumerate}[noitemsep, label = (\roman*)]
+            \item $\circ$ is associative, ie, for all objects $A, B, C, D \in \abs{\CC}$, $f \in \HomC{A, B}$, $g \in \HomC{B, C}$, and $h \in \HomC{C, D}$, we have $(h \circ g) \circ f = h \circ (g \circ f)$.
+            \item For all objects $A, B \in \abs{\CC}$ and morphisms $f \in \HomC{A, B}$, we have $f \circ \id_A = f$ and $\id_B \circ f = f$.
+        \end{enumerate}
+    \end{enumerate}
+\end{boxdefinition}
+
+There are numerous examples of categories, some familiar and some unfamiliar.
+
+\begin{boxexample}[Sets]
+    We can define a category $\Set$ whose objects are sets, whose morphisms are maps between sets, and in which the composition map is the standard composition of funtions.
+\end{boxexample}
+
+There is a slightly less familiar example that is of a computer scientific flavour.
+
+\begin{boxexample}[Pre-Orders] % Nick Wu's talk
+    Let $X$ be any set. Let $\leq$ be a pre-order on $X$, ie, a binary relation that is reflexive, antisymmetric and transitive. We can define a category $\cycl{X, \le}$ such that
+    \begin{enumerate}
+        \item The objects of $\cycl{X, \le}$ are single-element sets containing the elements of $X$. Ie, if $X = \N$, then $\abs{X} = \set{\set{0}, \set{1}, \set{2}, \ldots}$. In particular, $\abs{X}$ is a \underline{set}---in fact, a set that is in bijection with $X$.
+        \item For any $\set{x}, \set{y} \in \abs{X}$, there can be a unique function $f : \set{x} \to \set{y}$ (in the category of sets). In the category $\cycl{X, \le}$, we say define
+        \begin{align*}
+            \Hom_{\cycl{X, \le}}\!\parenth{\set{x}, \set{y}} =
+            \begin{cases}
+                \text{the sole function } \set{x} \to \set{y} & \text{if } x \le y \\
+                \emptyset & \text{otherwise}
+            \end{cases}
+        \end{align*}
+
+        \item We know that $\le$ is reflexive, so we have the identity morphism from any $\set{x}$ to itself.
+        \item Composition of functions is the standard set-theoretic composition of functions:
+        \begin{enumerate}[label = (\roman*)]
+            \item This is sensible because composition of functions and pre-orders are both transitive.
+            \item This is associative because the set-theoretic composition of functions is associative.
+            \item There does exist an identity on every object with respect to this composition operation because the pre-order is reflexive.
+        \end{enumerate}
+    \end{enumerate}
+\end{boxexample}
+
+Finally, a more abstract example.
+
+\begin{boxexample}[Monoids]\label{Ch1:Eg:Monoids} % Nick Wu's talk
+    Let $M$ be a monoid with with operation $\times$ and identity $e$. We can view $M$ as a category $\CC$ with the following data.
+    \begin{enumerate}
+        \item There is only one object in this category. This object can be anything. We denote it $\star$. Ie, we have $\abs{\CC} = \set{\star}$.
+        \item We can allow $M$ to act on $\star$ \underline{syntactically}. This means that we associate to any $x \in M$ a map $\star \to \star$, which we denote by an arrow from $\star$ to itself. When we say this action is \underline{syntactic}, we mean that we do not distinguish actions by their \textit{effects}, ie, we do not view these actions of elements of $M$ as maps from $\star$ to $\star$ (because in that case, we would need there to be enough maps from $\star$ to $\star$ to account for all elements of $M$). Instead, we view these actions as \textit{labels} on the arrows from $\star$ to itself.
+        \item The identity morphism on $\star$ is the action of the identity element $e \in M$.
+        \item Composition of morphisms is given by the monoid operation $\times$. This is associative because the monoid operation is associative, and the identity morphism is an identity with respect to this composition because it is associated with the identity element of the monoid.
+    \end{enumerate}
+    A specific thing that we can take $\star$ to be is the monoid $M$ itself (ie, $\abs{\CC} = \set{M}$). Then, the morphisms in $\CC$ correspond to the monoid homomorphisms $M \to M$ by (left-)multiplication by elements of $M$. In other words, we describe $\CC$ by the standard action of $M$ on itself.
+\end{boxexample}
+
+In the above examples, the category $\Set$ stands out as being the `largest': in the other two examples, the class of objects was actually a set. This is not true in $\Set$. That being said, in all our examples, the morphisms between any two objects formed a set. We make two definitions here to capture this idea.
+
+\begin{boxdefinition}[Locally Small Categories]
+    A category is \textbf{locally small} if the class of morphisms between any two objects is a set.
+\end{boxdefinition}
+
+In this module, we will not study any categories that are not locally small. We next define a category that is even more restrictive.
+
+\begin{boxdefinition}[Small Category]
+    A category is \textbf{small} if it is locally small and the class of objects is a set.
+\end{boxdefinition}
+
+All the examples we have discussed so far are of locally small categories. $\Set$, however, is not a small category, whereas pre-ordered sets and monoids are small categories.
+
+Finally, we define a construction that flips arrows in a category.
+
+\begin{boxdefinition}[The Opposite Category]
+    Given a category $\CC$, the \textbf{opposite category} $\CC\op$ is defined as follows.
+    \begin{enumerate}
+        \item The objects of $\CC\op$ are the same as the objects of $\CC$.
+        \item For each pair of objects $A, B \in \abs{\CC}$, we define $\Hom_{\CC\op}(A, B) = \HomC{B, A}$.
+        \item For each object $A \in \abs{\CC}$, the identity morphism in $\CC\op$ is the same as the identity morphism in $\CC$, i.e., $\id_A$.
+        \item For each ordered triple of objects $A, B, C \in \abs{\CC}$, the composition map in $\CC\op$ is defined by reversing the order of composition in $\CC$, i.e., for $f \in \Hom_{\CC\op}(A, B)$ and $g \in \Hom_{\CC\op}(B, C)$, we define $g \circ f$ in $\CC\op$ to be $f \circ g$ in $\CC$.
+    \end{enumerate}
+    One can show that the above data does, indeed, form a category.
 \end{boxdefinition}
 
 \subsection{Properties of Morphisms}
+
+\sorry
+
+\subsection{Functors}
+
+It turns out that we can define a meaningful notion of mapping categories to categories.
+
+\begin{boxdefinition}[Covariant Functor]
+    Given categories $\CC$ and $\DD$, a \textbf{covariant functor} $F : \CC \to \DD$ associates
+    \begin{enumerate}
+        \item To each object $A \in \abs{\CC}$, an object $F(A) \in \abs{\DD}$.
+        \item To each pair of objects $A, B \in \abs{\CC}$, a map $F : \HomC{A, B} \to \HomD{F(A), F(B)}$ such that
+        \begin{enumerate}[noitemsep, label = (\roman*)]
+            \item For all objects $A \in \abs{\CC}$, $F(\id_A) = \id_{F(A)}$.
+            \item For all objects $A, B, C \in \abs{\CC}$ and morphisms $f \in \HomC{A, B}$ and $g \in \HomC{B, C}$, $F(g \circ f) = F(g) \circ F(f)$.
+        \end{enumerate}
+    \end{enumerate}
+\end{boxdefinition}
+
+A functor is essentially something that associates objects to objects and arrows to arrows. Covariance means that arrows are preserved. We also have a notion of functors that flip arrows.
+
+\begin{boxdefinition}[Contravariant Functor]
+    Given categories $\CC$ and $\DD$, a \textbf{contravariant functor} $F : \CC \to \DD$ is a covariant functor $F : \CC\op \to \DD$.
+\end{boxdefinition}
+
+To some degree, we can view functors as `structure-preserving maps' between categories, ie, as `morphisms' between categories.
+
+\begin{boxexample}[The Category of Small Categories]
+    We denote by $\Cat$ the category whose objects are small categories and whose morphisms are functors between small categories. The identity morphism on a small category $\CC$ is the identity functor $\id_\CC : \CC \to \CC$. The composition operation on morphisms is the composition operation on functors.
+\end{boxexample}
+
+There are many examples of functors with which we are familiar.
+
+\begin{boxexample}[Exponential Functors]
+    Recall from \Cref{Ch1:Eg:Monoids} that monoids can be viewed as categories. Consider the monoids $\parenth{\N, 0, +}$ and $\parenth{\N, 1, \times}$. We can define a functor $F : \parenth{\N, 0, +} \to \parenth{\N, 1, \times}$ by $F(+) = \times$ and $F(n) = 2^n$. This is a functor because it preserves the monoid structure.
+\end{boxexample}
